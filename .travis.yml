@@ -1,0 +1,7 @@
+language: C
+before_script:
+  - sudo apt-get install autopoint help2man texinfo texlive
+  - ./autogen.sh
+  - ./configure
+  - make
+script: make check
